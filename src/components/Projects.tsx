@@ -1,16 +1,8 @@
 import React from 'react';
 import Project from './Project';
+import { ProjectsList } from '@/types/project';
 
-interface ProjectData {
-  title: string;
-  description: string;
-  previewUrl: string | null;
-  githubUrl: string | null;
-  demoUrl: string | null;
-  isPlaceholder?: boolean;
-}
-
-const projects: ProjectData[] = [
+const projects: ProjectsList = [
   {
     title: "Personal Portfolio",
     description: "Built with React, Next.js, TypeScript, and Tailwind CSS.",
