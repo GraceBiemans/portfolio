@@ -20,7 +20,7 @@ const projects: ProjectData[] = [
   },
   {
     title: "Rage",
-    description: "I built this project for my Dad&apos;s birthday because he loves the card game of Rage.",
+    description: "Placeholder description",
     previewUrl: "https://gracebiemans.github.io/rage/",
     githubUrl: "https://github.com/GraceBiemans/rage",
     demoUrl: "https://gracebiemans.github.io/rage/"

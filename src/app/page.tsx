@@ -45,7 +45,7 @@ export default function Home() {
 
         {/* Contact Section */}
         <div id="contact" className="mt-20 flex flex-col items-center scroll-mt-20">
-          <h2 className="text-2xl font-semibold text-gray-700 mb-8">Let's Connect!</h2>
+          <h2 className="text-2xl font-semibold text-gray-700 mb-8">Let&apos;s Connect!</h2>
           <ContactButtons buttonSize="lg" />
         </div>
       </main>
