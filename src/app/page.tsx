@@ -29,10 +29,10 @@ export default function Home() {
           {/* Introduction Text */}
           <div className="max-w-2xl space-y-4">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-700">
-              Hi, I'm <span className="text-pink-400">Grace Biemans</span>
+              Hi, I am <span className="text-pink-400">Grace Biemans</span>
             </h1>
             <p className="text-xl text-gray-600">
-              I'm passionate about using technology to solve problems.
+              I am passionate about using technology to solve problems.
             </p>
             <p className="text-lg text-gray-500">
               Welcome to my corner of the internet where I share my projects of all sizes.
