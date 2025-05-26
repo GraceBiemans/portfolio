@@ -4,7 +4,7 @@ interface ProjectProps {
   title: string;
   description: string;
   previewUrl: string;
-  githubUrl: string;
+  githubUrl: string | null;
   demoUrl: string;
   isReversed?: boolean;
   isPlaceholder?: boolean;
@@ -22,7 +22,7 @@ const Project: React.FC<ProjectProps> = ({
   const containerClasses = `flex flex-col lg:flex-row${isReversed ? '-reverse' : ''} items-center gap-8 lg:gap-12`;
 
   return (
-    <div className={containerClasses}>
+    <div className={`${containerClasses} ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
       {/* Project Preview */}
       <div className="w-full lg:w-1/2 aspect-video rounded-xl overflow-hidden shadow-lg ring-1 ring-pink-100">
         {isPlaceholder ? (
@@ -44,10 +44,11 @@ const Project: React.FC<ProjectProps> = ({
         <h3 className="text-2xl font-semibold text-gray-700">{title}</h3>
         <p className="text-gray-600">{description}</p>
         <div className="flex gap-4 pt-4">
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
             className={`inline-flex items-center gap-2 px-4 py-2 rounded-full ${
               isPlaceholder 
                 ? 'bg-gradient-to-r from-pink-300 to-purple-300 text-white font-medium opacity-50 cursor-not-allowed'
@@ -59,14 +60,15 @@ const Project: React.FC<ProjectProps> = ({
             </svg>
             View on GitHub
           </a>
+          )}
           <a
             href={demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-pink-200 text-gray-600 font-medium ${
+            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full ${
               isPlaceholder 
-                ? 'opacity-50 cursor-not-allowed'
-                : 'hover:bg-pink-50 transition-all shadow-sm hover:shadow-md'
+                ? 'bg-gradient-to-r from-pink-300 to-purple-300 text-white font-medium opacity-50 cursor-not-allowed'
+                : 'bg-gradient-to-r from-pink-300 to-purple-300 text-white font-medium hover:from-pink-400 hover:to-purple-400 transition-all shadow-sm hover:shadow-md'
             }`}
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

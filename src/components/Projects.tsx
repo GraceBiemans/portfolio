@@ -5,7 +5,7 @@ interface ProjectData {
   title: string;
   description: string;
   previewUrl: string;
-  githubUrl: string;
+  githubUrl: string | null;
   demoUrl: string;
   isPlaceholder?: boolean;
 }
@@ -19,19 +19,18 @@ const projects: ProjectData[] = [
     demoUrl: "https://weather-app-hazel-nu-88.vercel.app/"
   },
   {
+    title: "Ruthless Hotshot and Hauling",
+    description: "A website for a local Saskatoon business, made using WordPress. I worked with the owners to bring their brand to life.",
+    previewUrl: "https://ruthlesshotshotandhauling.ca/",
+    githubUrl: null,
+    demoUrl: "https://ruthlesshotshotandhauling.ca/"
+  },
+  {
     title: "Rage",
     description: "Placeholder description",
     previewUrl: "https://gracebiemans.github.io/rage/",
     githubUrl: "https://github.com/GraceBiemans/rage",
     demoUrl: "https://gracebiemans.github.io/rage/"
-  },
-  {
-    title: "Project Title",
-    description: "Project description will go here. This template shows how the alternating layout will work for future projects, with the preview on the right and content on the left.",
-    previewUrl: "",
-    githubUrl: "",
-    demoUrl: "",
-    isPlaceholder: true
   }
 ];
 

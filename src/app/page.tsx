@@ -32,10 +32,10 @@ export default function Home() {
               Hi, I am <span className="text-pink-400">Grace Biemans</span>
             </h1>
             <p className="text-xl text-gray-600">
-              I am passionate about using technology to solve problems.
+            Welcome to my corner of the internet where I share my projects of all sizes.
             </p>
             <p className="text-lg text-gray-500">
-              Welcome to my corner of the internet where I share my projects of all sizes.
+              Live demo links will allow you to view the projects in full size.
             </p>
           </div>
         </div>
