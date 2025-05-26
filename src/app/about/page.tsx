@@ -1,5 +1,3 @@
-import ProfileHero from "@/components/Profile";
-
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-rose-50 via-pink-50 to-purple-50">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ProfileHero() {
+export default function Profile() {
   return (
     <div className="flex flex-col items-center text-center space-y-8">
       {/* Profile Image */}
