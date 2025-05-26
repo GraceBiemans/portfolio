@@ -4,13 +4,20 @@ import Project from './Project';
 interface ProjectData {
   title: string;
   description: string;
-  previewUrl: string;
+  previewUrl: string | null;
   githubUrl: string | null;
-  demoUrl: string;
+  demoUrl: string | null;
   isPlaceholder?: boolean;
 }
 
 const projects: ProjectData[] = [
+  {
+    title: "Personal Portfolio",
+    description: "Built with React, Next.js, TypeScript, and Tailwind CSS.",
+    previewUrl: null,
+    githubUrl: "https://github.com/GraceBiemans/portfolio",
+    demoUrl: null
+  },
   {
     title: "European City Weather App",
     description: "A small React-based project built to practice working with APIs and frontend technologies. It uses HTML, CSS, and JavaScript alongside the free 7Timer! API to fetch and display weather data. Users can select from a list of major European cities to view current weather conditions in a clean, responsive interface.",
@@ -36,12 +43,12 @@ const projects: ProjectData[] = [
 
 const Projects: React.FC = () => {
   return (
-    <div id="projects" className="mt-32 space-y-32 scroll-mt-20">
+    <div id="projects" className="mt-18 space-y-20 scroll-mt-20">
       {projects.map((project, index) => (
         <Project
           key={project.title}
           {...project}
-          isReversed={index % 2 === 1} // Alternate layout for even/odd projects
+          isReversed={index % 2 === 0} // Alternate layout for even/odd projects
         />
       ))}
     </div>
