@@ -19,17 +19,11 @@ const projects: ProjectsList = [
   },
   {
     title: "Ruthless Hotshot and Hauling",
-    description: "A website for a local Saskatoon business, made using WordPress. I worked with the owners to bring their brand to life.",
+    description:
+      "A simple and informative website for a local Saskatchewan company, reflecting their skills and goals. This site allows clients to get to know the company and contact them through a form or any of their provided information. I collaborated with the owners to create their logo and to give them a cost-effective presence online, including Google business setup.",
     previewUrl: "https://ruthlesshotshotandhauling.ca/",
     githubUrl: null,
     demoUrl: "https://ruthlesshotshotandhauling.ca/"
-  },
-  {
-    title: "Rage",
-    description: "Placeholder description",
-    previewUrl: "https://gracebiemans.github.io/rage/",
-    githubUrl: "https://github.com/GraceBiemans/rage",
-    demoUrl: "https://gracebiemans.github.io/rage/"
   }
 ];
 
