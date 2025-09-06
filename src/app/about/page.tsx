@@ -58,7 +58,7 @@ export default function AboutPage() {
                 <p className="text-sm text-gray-500">June 2025 &ndash; Present</p>
                 <ul className="list-disc pl-5">
                   <li>Work with a small team to maintain and improve the Vendasta marketplace platforms.</li>
-                  <li>Contributed to sprint planning.</li>
+                  <li>Contribute to sprint planning.</li>
                 </ul>
               </div>
             </div>
