@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { ProjectProps } from '@/types/project';
 
 const Project: React.FC<ProjectProps> = ({
@@ -8,6 +9,7 @@ const Project: React.FC<ProjectProps> = ({
   githubUrl,
   demoUrl,
   isReversed = false,
+  isPlaceholder = false,
 }) => {
   const containerClasses = `flex flex-col lg:flex-row${isReversed ? '-reverse flex justify-end' : ''} items-center gap-8 lg:gap-12`;
 
@@ -15,19 +17,34 @@ const Project: React.FC<ProjectProps> = ({
     <div className={`${containerClasses} ${isReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
       {/* Project Preview */}
       {previewUrl && (
-        <div className="w-full lg:w-1/2 aspect-video rounded-xl overflow-hidden shadow-lg ring-1 ring-pink-100">
-          <iframe
-            src={previewUrl}
-            className="w-full h-full"
-            title={`${title} Preview`}
-            loading="lazy"
-          />
+        <div className="w-full lg:w-1/2 aspect-video rounded-xl overflow-hidden shadow-lg ring-1 ring-pink-100 flex items-center justify-center bg-gray-100">
+          {isPlaceholder ? (
+            <Image
+              src={previewUrl}
+              alt={`${title} placeholder`}
+              width={800}
+              height={450}
+              className="object-cover w-full h-full"
+            />
+          ) : (
+            <iframe
+              src={previewUrl}
+              className="w-full h-full"
+              title={`${title} Preview`}
+              loading="lazy"
+            />
+          )}
         </div>
       )}
       
       {/* Project Info */}
       <div className="w-full lg:w-1/2 space-y-4">
-        <h3 className="text-2xl font-semibold text-gray-700">{title}</h3>
+        <h3 className="flex items-center gap-2 text-2xl font-semibold text-gray-700">
+          {title}
+          {isPlaceholder && (
+            <span className="px-2 py-1 text-xs font-medium text-white bg-gray-400 rounded-full">Coming Soon</span>
+          )}
+        </h3>
         <p className="text-gray-600">{description}</p>
         <div className="flex gap-4 pt-4">
           {githubUrl && (

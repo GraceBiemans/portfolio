@@ -24,6 +24,15 @@ const projects: ProjectsList = [
     previewUrl: "https://ruthlesshotshotandhauling.ca/",
     githubUrl: null,
     demoUrl: "https://ruthlesshotshotandhauling.ca/"
+  },
+  {
+    title: "Fleet Safety App",
+    description:
+      "An iOS and Android app built with Flutter that lets companies create and store safety checklists for their equipment. Each checklist links to a specific piece of gear so users can review safety status and notes from previous inspections, helping ensure upkeep and safety. I'm working with a local company to tailor this to their needs. This project is currently in progress—coming soon.",
+    previewUrl: "/placeholder.svg",
+    githubUrl: null,
+    demoUrl: null,
+    isPlaceholder: true,
   }
 ];
 
