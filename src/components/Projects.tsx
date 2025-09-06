@@ -23,13 +23,6 @@ const projects: ProjectsList = [
     previewUrl: "https://ruthlesshotshotandhauling.ca/",
     githubUrl: null,
     demoUrl: "https://ruthlesshotshotandhauling.ca/"
-  },
-  {
-    title: "Rage",
-    description: "Placeholder description",
-    previewUrl: "https://gracebiemans.github.io/rage/",
-    githubUrl: "https://github.com/GraceBiemans/rage",
-    demoUrl: "https://gracebiemans.github.io/rage/"
   }
 ];
 
