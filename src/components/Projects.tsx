@@ -4,6 +4,13 @@ import { ProjectsList } from '@/types/project';
 
 const projects: ProjectsList = [
   {
+    title: "Personal Portfolio",
+    description: "Built with React, Next.js, TypeScript, and Tailwind CSS.",
+    previewUrl: null,
+    githubUrl: null,
+    demoUrl: null
+  },
+  {
     title: "Ruthless Hotshot and Hauling",
     description:
       "A simple and informative website for a local Saskatchewan company, reflecting their skills and goals. This site allows clients to get to know the company and contact them through a form or any of their provided information. I collaborated with the owners to create their logo and to give them a cost-effective presence online, including Google business setup.",
@@ -17,13 +24,6 @@ const projects: ProjectsList = [
     previewUrl: "https://weather-app-hazel-nu-88.vercel.app/",
     githubUrl: null,
     demoUrl: "https://weather-app-hazel-nu-88.vercel.app/"
-  },
-  {
-    title: "Personal Portfolio",
-    description: "Built with React, Next.js, TypeScript, and Tailwind CSS.",
-    previewUrl: null,
-    githubUrl: null,
-    demoUrl: null
   },
   {
     title: "Fleet Safety App",
@@ -50,4 +50,4 @@ const Projects: React.FC = () => {
   );
 };
 
-export default Projects; 
+export default Projects;
