@@ -7,14 +7,14 @@ const projects: ProjectsList = [
     title: "Personal Portfolio",
     description: "Built with React, Next.js, TypeScript, and Tailwind CSS.",
     previewUrl: null,
-    githubUrl: "https://github.com/GraceBiemans/portfolio",
+    githubUrl: null,
     demoUrl: null
   },
   {
     title: "European City Weather App",
     description: "A small React-based project built to practice working with APIs and frontend technologies. It uses HTML, CSS, and JavaScript alongside the free 7Timer! API to fetch and display weather data. Users can select from a list of major European cities to view current weather conditions in a clean, responsive interface.",
     previewUrl: "https://weather-app-hazel-nu-88.vercel.app/",
-    githubUrl: "https://github.com/GraceBiemans/weather-app",
+    githubUrl: null,
     demoUrl: "https://weather-app-hazel-nu-88.vercel.app/"
   },
   {
