@@ -3,8 +3,8 @@ import ContactButtons from './ContactButtons';
 
 export default function Navigation() {
   return (
-    <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-      <div className="flex items-center gap-6">
+    <nav className="container mx-auto px-4 py-4 h-auto flex flex-col sm:flex-row items-center sm:justify-between gap-4">
+      <div className="flex items-center gap-4 sm:gap-6">
         <Link 
           href="/"
           className="text-gray-700 hover:text-pink-400 transition-colors font-medium"
